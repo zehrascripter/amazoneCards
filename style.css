@@ -1,0 +1,52 @@
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.cards {
+    width: 22%;
+    height: auto;
+    background-color: rgb(221, 221, 221);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+    margin-bottom: 20px;
+}
+.cards:hover {
+    background-color: rgb(179, 173, 173);
+}
+img {
+    height: 200px;
+    width: 100%;
+}
+.btn {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    background-color: rgb(243, 243, 170);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.btn:hover {
+    background-color: yellow;
+}
+.red {
+    color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .cards {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        width: 100%;
+    }
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+}
